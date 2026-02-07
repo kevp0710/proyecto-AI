@@ -1,5 +1,3 @@
-
-
 * {
     padding: 0;
     box-sizing: border-box;
@@ -7,8 +5,16 @@
     margin: 0;
 }
 
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
-    background-color: '#f5f7fa';
+    background-color: #f5f7fa;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 header {
@@ -21,6 +27,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 20px;
 }
 
 .hero {
@@ -34,8 +41,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px;
+    padding: 20px;
     color: #f5f7fa;
+}
+
+@media (max-width: 768px) {
+    .hero{
+        padding: 20px;
+    }
 }
 
 .hero-content{
@@ -148,19 +161,76 @@ header {
 }
 
 @media (max-width: 768px) {
-  .features-grid,
-  .destinations-grid {
+    .features-grid{
+        grid-template-columns: 1fr;
+        justify-items: center; 
+    }
+    
+    @media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 15px;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .menu {
+        justify-content: center;
+        gap: 12px;
+    }
+}
+
+.logo {
+    font-size: 20px;  
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.destinations-grid {
     flex-direction: column;
     align-items: center;
-  }
+}
 
-  .hero {
+.hero {
     height: 60vh;
     padding: 30px;
     text-align: center;
-  }
+}
 
-  .hero h2 {
+.hero h2 {
     font-size: 28px;
-  }
+}
+
+.menu {
+    display: flex;
+    gap: 20px;        
+    font-size: 14px;
+}
+
+
+.footer {
+    width: 100vh;
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.footer {
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 0;
 }
