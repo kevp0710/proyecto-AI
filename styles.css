@@ -163,6 +163,24 @@ header {
         grid-template-columns: 1fr;
         justify-items: center; 
     }
+    
+    @media (max-width: 768px) {
+    .nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+    }
+
+    .logo {
+    font-size: 20px;  
+    }
+
+    .menu {
+    font-size: 14px;  
+    text-align: center;
+    line-height: 1.4;
+    }
+}
 
     .destinations-grid {
     flex-direction: column;
