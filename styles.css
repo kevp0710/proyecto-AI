@@ -1,5 +1,3 @@
-
-
 * {
     padding: 0;
     box-sizing: border-box;
@@ -7,8 +5,15 @@
     margin: 0;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     background-color: '#f5f7fa';
+    margin: 0;
+    overflow-x: hidden;
 }
 
 header {
@@ -34,8 +39,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px;
+    padding: 20px;
     color: #f5f7fa;
+}
+
+@media (max-width: 768px) {
+    .hero{
+        padding: 20px;
+    }
 }
 
 .hero-content{
@@ -148,19 +159,22 @@ header {
 }
 
 @media (max-width: 768px) {
-  .features-grid,
-  .destinations-grid {
+    .features-grid{
+        grid-template-columns: 1fr;
+        justify-items: center; 
+    }
+
+    .destinations-grid {
     flex-direction: column;
     align-items: center;
-  }
+    }
 
-  .hero {
+.hero {
     height: 60vh;
     padding: 30px;
     text-align: center;
-  }
+}
 
-  .hero h2 {
+.hero h2 {
     font-size: 28px;
-  }
 }
