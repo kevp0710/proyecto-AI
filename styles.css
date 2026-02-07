@@ -211,3 +211,15 @@ header {
     gap: 20px;        
     font-size: 14px;
 }
+
+.footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 0;
+}
