@@ -116,7 +116,8 @@ header {
 }
 
 .destinations-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     justify-content: center;
     flex-wrap: wrap;
@@ -190,12 +191,13 @@ header {
 
 
 footer {
-   
-    height:200px;
+    height:34px;
     background-color: #1e3a8a;
     color: white;
+    display: flex;
     text-align: center;
-    padding: 20px;
+    justify-content: center;
+    padding: 10px;
     font-size: 14px;
 }
 
