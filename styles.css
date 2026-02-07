@@ -26,6 +26,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 20px;
 }
 
 .hero {
@@ -166,26 +167,34 @@ header {
     
     @media (max-width: 768px) {
     .nav {
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px 15px;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 15px;
     }
 
-    .logo {
-    font-size: 20px;  
+    .nav {
+        flex-direction: column;
+        gap: 10px;
     }
-
+    
     .menu {
-    font-size: 14px;  
-    text-align: center;
-    line-height: 1.4;
+        justify-content: center;
+        gap: 12px;
     }
 }
 
-    .destinations-grid {
+.logo {
+    font-size: 20px;  
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+.destinations-grid {
     flex-direction: column;
     align-items: center;
-    }
+}
 
 .hero {
     height: 60vh;
@@ -195,4 +204,10 @@ header {
 
 .hero h2 {
     font-size: 28px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;        
+    font-size: 14px;
 }
