@@ -146,3 +146,21 @@ header {
     transform: translateY(-8px);
     box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
 }
+
+@media (max-width: 768px) {
+  .features-grid,
+  .destinations-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    height: 60vh;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+}
