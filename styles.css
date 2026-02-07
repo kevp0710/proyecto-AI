@@ -121,6 +121,9 @@ header {
     gap: 40px;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 800px;
+    justify-items: center;
+    margin: 0 auto;
 }
 
 .destination-card {
@@ -211,6 +214,11 @@ footer {
         justify-items: center; 
     }
     
+    .destinations-grid{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
     .nav {
         flex-direction: column;
         gap: 10px;
